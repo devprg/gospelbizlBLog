@@ -1,0 +1,69 @@
+#category {
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    
+
+    select {
+      color: dodgerblue;
+      font-size: 18px;
+      font-weight: bold;;
+      width: 100%;
+      padding: 16px 14px;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    option {
+      color: #fa1807;
+      padding: 1rem;
+    }
+
+ #category {
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 34px 20px;
+ }
+
+ #category:hover {
+  color:  #fa1807;
+ }
+
+ #hidden {
+   display: hidden;
+  
+ }
+
+
+    #banner_image {
+     background: url('../../imgs/upload_icon_banner.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 100%;
+     width: 100%;
+     object-fit: contain;
+    }
+
+
+#demo {
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+
+input[type=file] {
+  width: 100%;
+  height: 70px;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+input[type=file]::before {
+  content: "Upload ";
+  padding: .5rem;
+  font-size: 1rem;
+  color: #111;
+}

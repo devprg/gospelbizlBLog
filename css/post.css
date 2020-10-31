@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --main-bg-color: #f2f2f2;
+    --column-bg: #fff;
+    --column-box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, .1);;
+  }
+  
+  body, html {
+    background: var(--main-bg-color)!important;
+    padding: 0;
+    margin: 0;
+  }
+
+.myPost {
+    margin-top: 1rem!important;
+}  
+
+.main-article {
+    justify-content: flex-start!important;
+    align-items: flex-start!important;
+    background: var(--column-bg);
+}
+
+.main-article .post-col img {
+    width: 100%!important;;
+}
+
+
+.post-title {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: .4rem;
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+
+.content, .download {
+    color: var(column-bg);
+    font-size: 1.25rem;
+}
+
+
+
+.tags, .content, .download  {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+
+.tags {
+    padding: 20px 0 15px 12px;
+}
+
+audio {
+ width: 100%!important;
+ height: 80px;
+ padding: .6rem;
+}
+
+.download-btn {
+    width: 97%;
+    height: auto;
+    padding: .75rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    color: #f00;
+    background: dodgerblue;
+    background-image: -webkit-linear-gradient(#009fd4,#09c,#0086b2);
+    box-shadow: 0 2px 4px rgba(7, 148, 241, 0.1), inset 0 1px 0 rgba(15, 212, 247, 0.1);
+    margin: 0 auto;
+}
+
+
+.download-btn:hover {
+    background: rgb(27, 125, 223);
+    background-image: -webkit-linear-gradient(#1d6e8a,rgb(6, 125, 165),#0086b2);
+}
+
+.download-btn {
+  position: sticky;
+  top: 10%;
+}
+
+
+.download-btn a {
+    text-decoration: none;
+}
+
+.download-title {
+    color: var(--column-bg);
+    font-size: 1.2rem;
+    font-weight: 350;
+    text-shadow: 2px 2px #FF0000;
+}
+
+.download-text {
+    color: var(--column-bg);
+}
+
+
+/*bottom article */
+.bottom-article {
+    grid-area: bottom;
+    flex-flow: row wrap!important;
+    justify-content: center;
+   align-items: center;
+   margin-bottom: 2rem;
+  }
+  
+
+  .bottom-article .post-col a {
+    text-decoration: none;
+  }
+
+  .bottom-article .post-col {
+      width: 33.33%;
+      padding-right: 12px;
+      padding-bottom: 1rem;
+  }
+
+  .bottom-article .post-col img {
+    max-width: 100%;
+}
+
+.post-caption {
+    font-size: 1.3rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 1rem .4rem 1rem .6rem;
+}
+
+
+.content {
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 1.3;
+}
+
+.tags, .content {
+    color: #888888!important;
+    text-align: left;
+}
+
+ {
+    width: 75%!important;
+    margin-top: 1rem;
+}
+
+
+.comment-heading {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+
+.comment-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    /*#imagemargin-left: 14%;*/
+}
+
+#comment-img {
+    float: left;
+    width: 100px;
+    height: 80px;
+    padding-right: 1rem;
+}
+
+.comment-author {
+    font-size: 1rem;
+    font-family: serif;
+    font-weight: 400;
+    padding-top: 16px;
+}
+.comment-date  {
+    font-size: .9rem;
+}
+
+
+#comment_Link {
+    text-decoration: none;
+    background: none!important;
+}
+
+@media (max-width: 768px) {
+
+    .bottom-article .post-col {
+        width: 80%;
+        padding-right: 0;
+        padding-bottom: 12px;
+        padding-left: 0;
+    }
+
+    .comment-content {
+    width: 100%!important;
+    margin-left: 0!important;
+    padding: 1rem;
+}
+
+}
+
+
+
+@media (max-width: 576px)  {
+
+    .bottom-article .post-col {
+        width: 100%;
+        padding-right: 0!important;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+    #post-image {
+        height: 300px;
+    }
+
+    #image {
+        height: 200px;
+    }
+    
+    #image, #post-image {
+        object-fit: cover;
+    }
+  
+  .fa-comment, .fa-user {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  .comment-content {
+    width: 100%!important;
+    margin-left: 0!important;
+    padding: 1rem;
+}
+}
