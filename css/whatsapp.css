@@ -1,0 +1,8 @@
+.fa-whatsapp-square {
+	position: fixed;
+	bottom: 100px;
+	right: 12px;
+	font-size: 4rem;
+	z-index: 1;
+	color: #25D366;
+}

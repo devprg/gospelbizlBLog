@@ -17,6 +17,13 @@
     margin: 0;
   }
 
+
+  #image {
+    width: 70%!important;
+    height: auto;
+    object-fit: cover;
+  }
+
 .myPost {
     margin-top: 1rem!important;
 }  
@@ -164,7 +171,6 @@ audio {
     justify-content: center;
     align-items: center;
     width: 500px;
-    /*#imagemargin-left: 14%;*/
 }
 
 #comment-img {
@@ -223,7 +229,7 @@ audio {
     }
 
     #image {
-        height: 200px;
+        width: 80%!important
     }
     
     #image, #post-image {

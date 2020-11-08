@@ -41,22 +41,25 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
+   <link href="css/whatsapp.css" rel="stylesheet">
 
   <link href="css/navbar.css" rel="stylesheet">
   <link href="css/category.css" rel="stylesheet">
   <link href="css/backtop.css" rel="stylesheet">
   <link href="css/blog-home.css" rel="stylesheet">
 
+
   <link rel="stylesheet" href="/css/responsive-media-query.css">
+
+
 
   <!-- google fonts for the main title -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!-- jquery libary -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-<!-- editor -->
-<script src="https://cdn.ckeditor.com/ckeditor5/21.0.0/classic/ckeditor.js"></script>
 
 
 </head>
@@ -166,6 +169,7 @@
     <?php include "includes/footer.php"; ?>
     <!-- ./footer -->
 
+    <script src="/js/navbarSearch.js"></script>
 
 <script src="/js/lazyload.js"></script>
 

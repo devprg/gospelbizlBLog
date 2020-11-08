@@ -43,6 +43,10 @@
         <link href="css/media-query.css" rel="stylesheet">
         <link href="css/backtop.css" rel="stylesheet">
         <link href="css/blog-home.css" rel="stylesheet">
+        <link href="css/whatsapp.css" rel="stylesheet">
+
+        <link href="css/modal.css" rel="stylesheet">
+
 
 
           <!-- responsive media query -->
@@ -56,8 +60,9 @@
 
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
+
         <!-- google fonts for the main title -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
         <!-- jquery libary -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -73,6 +78,60 @@
 
 </head>
 <body >
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header bg-muted">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Welcome to our letternews </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+      <div class="modal-body">
+        
+  <div class="container" id="landing-page">
+
+    <div class="hero-image">
+   
+   <h1 class="landing-page-title">Get In Touch With Our Marketing Team</h1>
+
+   <div class="landing-page-text">Please subscribe to the GospelBiz Liberia newsletter for music, videos, news, articles and new
+    products offerings.
+   </div>
+
+    <form action="" method="post">
+      <div class="input-group-prepend">
+        <input type="text " class="form-control" placeholder="Enter your email address...">
+        <input type="submit" class="btn btn-primary" value="Subscribe">
+      </div>
+
+      <small class="text-light">Your email is protect with us don't worry.</small>
+    </form>
+
+<!-- ./hero image  -->
+  </div>
+
+
+   <!-- ./container -->
+  </div>
+
+
+      </div>
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+
+
+
 
   <!-- ./ navbar blog -->
     <?php include "includes/navbar.php"; ?>
@@ -298,7 +357,17 @@
     <script src="js/lightslider.js"></script>
 
     <script src="js/lazyload.js"></script>
+    <script src="js/navbarSearch.js"></script>
 
+
+    <script>
+      $(document).ready(function() {
+          $("#exampleModal").modal(3000);
+
+        });
+     
+    </script>
+ 
 
 
 </body>

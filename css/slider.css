@@ -1,6 +1,10 @@
+
+
+
 a {
     text-decoration: none;
 }
+
 
 
 .comment-content {
@@ -161,7 +165,14 @@ a {
 
 
 @media (max-width: 576px), (max-width: 768px)  {
-    
+  
+
+    .bg-slide {
+    border: 2px solid #ddd;
+    padding: 0!important;
+    height: 524px!important;
+}
+
 .boxs {
     width: 380px;
 }
@@ -177,12 +188,11 @@ a {
     .bg-slide {
     border: 2px solid #ddd;
     padding: 0!important;
-    height: 480px;
+    height: 470px!important;
 }
     
 .boxs {
     width: 380px;
-    /*height: 400px;;*/
     margin: 0 auto;
    overflow: hidden;
    padding-right: 0!important;

@@ -75,7 +75,7 @@
   <link href="/css/backtop.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/responsive-media-query.css">
 
-
+  <link href="/css/whatsapp.css" rel="stylesheet">
 
 <!-- post awesome fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -123,7 +123,6 @@
         
         $the_post_id = $_GET["p_id"];
 
-
         // post view sql
         $view_query = "UPDATE posts SET post_view_counts = post_view_counts + 1 WHERE post_id = $the_post_id ";
         $send_query = mysqli_query($conn, $view_query);
@@ -132,7 +131,6 @@
         if(!$send_query) {
           die("<p class='text-danger> Query Fialed  </p>'");
         }
-
 
         $sql = "SELECT * FROM posts WHERE post_id = {$the_post_id} ";
         
@@ -299,9 +297,6 @@
           $post_title = $row["post_title"];
           $post_image = $row["post_image"];
           $post_content = $row["post_content"];
-          // $post_content = $row["post_content"];
-
-
         
           ?>
     <div class="bottom-col">
@@ -318,6 +313,9 @@
     </div>
       
     <?php  }  }  ?>
+
+
+
 
 
   <br>
@@ -458,6 +456,7 @@
 
     <script src="/js/lazyload.js"></script>
 
+    <script src="/js/navbarSearch.js"></script>
     
  
 </body>
